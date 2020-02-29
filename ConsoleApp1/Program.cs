@@ -20,8 +20,24 @@ namespace ConsoleApp1
     }
     class Program
     {
-
         static void Main(string[] args)
+        {
+
+            new Program();
+            Console.ReadLine();
+        }
+
+        public Program()
+        {
+            Test1();
+        }
+
+        public void Test2()
+        {
+
+        }
+
+        public void Test1()
         {
             // Our anonymous type sequence
             var anonymousEnumerable = Enumerable
@@ -132,11 +148,11 @@ namespace ConsoleApp1
                         break;
                     }
                 }
-                    
-            }
 
-            Console.ReadLine();
+            }
         }
+
+        
 
 
     }
